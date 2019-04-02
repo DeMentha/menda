@@ -4,7 +4,7 @@ import { Action, AnyAction } from 'redux';
 
 // Constants
 
-export const IS_LOADING_STATUS = '@sc/IS_LOADING_STATUS';
+export const IS_LOADING_STATUS = '@picasso/IS_LOADING_STATUS';
 export enum Status {
     LOADING = 'LOADING',
     COMPLETE = 'COMPLETE',
