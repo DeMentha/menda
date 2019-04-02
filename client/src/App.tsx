@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import loggerMiddleware from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import appReducer from './app_reducer';
-import HeaderContainer from './components/header/HeaderContainer';
+import Header from './components/header/HeaderContainer';
 
 
 const store = createStore(
@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <HeaderContainer />
+          <Header />
         </div>
       </Provider>
     );
