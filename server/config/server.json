@@ -1,0 +1,11 @@
+{
+    "development": {
+      "port": "3000",
+      "client_host": "http://localhost:3001"
+    },
+    "production": {
+      "port": "3000",
+      "client_host": ""
+    }
+  }
+  

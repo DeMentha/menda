@@ -1,0 +1,20 @@
+{
+    "defaultSeverity": "error",
+    "jsRules": {},
+    "rules": {
+        "semicolon": {
+            "options": ["always"]
+        },
+        "prefer-object-spread": true,
+        "prefer-const": true,
+        "arrow-return-shorthand": true,
+        "no-console": false,
+        "variable-name": {
+            "options": ["ban-keywords", "check-format", "allow-pascal-case"]
+        },
+        "no-unused-variable": false,
+        "eofline": false
+    },
+    "extends": ["tslint-config-prettier"],
+    "rulesDirectory": []
+}

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./compiled/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "lib": ["es6", "dom", "esnext"],
+    "target": "es6",
+    "jsx": "react",
+    "allowJs": true,
+    "noUnusedLocals": true
+  },
+  "include": [
+    "./declarations/*",
+    "./src/server/*",
+    "./src/server/models/*",
+    "./src/core/*"
+  ],
+  "exclude": [
+      "./node_modules/"
+  ]
+}

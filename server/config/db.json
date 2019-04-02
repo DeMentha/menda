@@ -1,0 +1,19 @@
+{
+    "development": {
+      "user": "",
+      "password": "",
+      "database": "",
+      "host": "localhost",
+      "driver": "pg",
+      "port": "5432"
+    },
+    "production": {
+      "user": "",
+      "password": "",
+      "database": "",
+      "host": "",
+      "driver": "pg",
+      "port": "5432"
+    }
+  }
+  
