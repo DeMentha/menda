@@ -10,7 +10,8 @@
     "setup_db:prod": "./node_modules/.bin/db-migrate up -m src/migrations/ --config ./config/db.json -e production",
     "clear_db": "./node_modules/.bin/db-migrate reset -m src/migrations/ --config ./config/db.json",
     "new_migration": "./node_modules/.bin/db-migrate create -m src/migrations/ --config config/db.json",
-    "undo_migration": "./node_modules/.bin/db-migrate down -m src/migrations/ --config ./config/db.json"
+    "undo_migration": "./node_modules/.bin/db-migrate down -m src/migrations/ --config ./config/db.json",
+    "update_deps": "node ../bin/updateDeps.js"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
