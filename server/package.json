@@ -40,7 +40,7 @@
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
-    "@types/bcryptjs": "^2.4.1",
+    "@types/bcryptjs": "^2.4.2",
     "@types/body-parser": "^1.17.0",
     "@types/cookie": "^0.3.2",
     "@types/debug": "^4.0.0",
