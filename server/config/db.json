@@ -2,10 +2,18 @@
     "development": {
       "user": "",
       "password": "",
-      "database": "",
+      "database": "menda",
       "host": "localhost",
       "driver": "pg",
-      "port": "5432"
+      "port": 5432
+    },
+    "test": {
+      "user": "",
+      "password": "",
+      "database": "menda_test",
+      "host": "localhost",
+      "driver": "pg",
+      "port": 5432
     },
     "production": {
       "user": "",
@@ -13,7 +21,7 @@
       "database": "",
       "host": "",
       "driver": "pg",
-      "port": "5432"
+      "port": 5432
     }
   }
   

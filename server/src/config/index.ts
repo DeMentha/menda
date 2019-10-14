@@ -13,18 +13,18 @@ class Config {
     }
 
     get dbUsername(): string {
-        return dbConfig[this.environment]['user'];
+        return process.env.PGUSER || dbConfig[this.environment]['user'];
     }
 
     get dbPassword(): string {
-        return dbConfig[this.environment]['password'];
+        return process.env.PGPASSWORD || dbConfig[this.environment]['password'];
     }
 
     get dbHost(): string {
         return dbConfig[this.environment]['host'];
     }
 
-    get dbPort(): string {
+    get dbPort(): number {
         return dbConfig[this.environment]['port'];
     }
 
@@ -41,11 +41,18 @@ export class ProdConfig extends Config {
     environment = 'production';
 }
 
+export class TestConfig extends Config {
+    environment = 'test';
+}
+
 export function getConfig(): Config {
-    if (process.env.NODE_ENV == 'production') {
-        return new ProdConfig();
-    } else {
-        return new DevelopmentConfig();
+    switch (process.env.NODE_ENV) {
+        case 'production':
+            return new ProdConfig();
+        case 'test':
+            return new TestConfig();
+        default:
+            return new DevelopmentConfig();
     }
 }
 
