@@ -1,8 +1,8 @@
 'use strict';
 
-var dbm;
-var type;
-var seed;
+let dbm;
+let type;
+let seed;
 
 /**
   * We receive the dbmigrate dependency from dbmigrate initially.
@@ -20,7 +20,7 @@ exports.up = function(db) {
       type: 'uuid', 
       notNull: true,
       primaryKey: true,
-      defaultValue: new String('uuid_generate_v4()')
+      defaultValue: String('uuid_generate_v4()')
     },
     name: {
       type: 'string',
@@ -29,7 +29,7 @@ exports.up = function(db) {
     created_at: {
       notNull: true,
       type: 'timestamp',
-      defaultValue: new String('now()')
+      defaultValue: String('now()')
     }
   })
 };
